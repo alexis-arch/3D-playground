@@ -76,7 +76,7 @@ new Zdog.Shape({
     { x:  3, y: -3 },
   ],
   translate: { y: 12, z: 9 },
-  color: "black",
+  color: "red",
   fill: true,
   stroke: 2,
   addTo: head,
