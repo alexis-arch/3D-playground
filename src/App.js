@@ -5,14 +5,18 @@ import TextAnimation from './TextAnimation';
 import Mario from './Mario';
 import { Slides } from './Slides';
 import Cat from './Cat';
+import Fish from './Fish';
+import Fork from './Fork';
 
 
 function App() {
   return (
     <div className="App">
+      <Fork />
+      <Fish />
       {/* <Animation /> */}
-      {/* <Mario />
-      <NewAnimation /> */}
+       {/* <Mario /> */}
+      {/* <NewAnimation /> */}
       {/* <Slides /> */}
       <Cat />
       {/* <TextAnimation /> */}

@@ -141,13 +141,33 @@ function generateShapes(){
         backface: '#C25',
       });
 
+      // let tail = new Zdog.Shape({
+      //   addTo: body,
+      //   path: [ { y: 10 }, { y: -48 } ],
+      //   translate: { x: 0, y: -50, z: 20 },
+      //   color: '#ff8968',
+      //   rotate: { x: -Zdog.TAU/5 },
+      //   stroke: 12,
+      // });
+
       let tail = new Zdog.Shape({
         addTo: body,
-        path: [ { y: 10 }, { y: -48 } ],
-        translate: { x: 0, y: -50, z: 20 },
-        color: '#ff8968',
-        rotate: { x: -Zdog.TAU/5 },
+        path: [
+          { y: -10 },   // start
+          { arc: [
+            { x:  20, y: 10 }, // corner
+            { x:  20, y:  20 }, // end point
+          ]},
+          { arc: [ // start next arc from last end point
+            { x:  20, y:  60 }, // corner
+            { x:  60, y:  60 }, // end point
+          ]},
+        ],
+        closed: false,
+        translate: { x: 0, y: -40, z: 20 },
+        rotate: { x: Zdog.TAU/5, y: Zdog.TAU/5 },
         stroke: 12,
+        color: '#ff8968',
       });
 
       let foot = new Zdog.Shape({
