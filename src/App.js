@@ -9,6 +9,8 @@ import Fish from './Fish';
 import Fork from './Fork';
 import Quizz from './Quizz';
 import Gym from './Gym';
+import ImageSVG from './ImageSVG';
+import AiPhotostock from './AiPhotostock';
 
 
 function App() {
@@ -22,7 +24,8 @@ function App() {
       <div className="container-3d">
         <div className="card-3d"><Cat /></div>
         <div className="card-3d"><Gym /></div>
-
+        <div className="card-3d"><AiPhotostock /></div>
+        {/* <div className="card-3d"><ImageSVG /></div> */}
       </div>
       
 
