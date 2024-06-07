@@ -4,7 +4,7 @@ import NewAnimation from './NewAnimation';
 import TextAnimation from './TextAnimation';
 import Mario from './Mario';
 import { Slides } from './Slides';
-import Fish from './Fish';
+import Cat from './Cat';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       {/* <Mario />
       <NewAnimation /> */}
       {/* <Slides /> */}
-      <Fish />
+      <Cat />
       {/* <TextAnimation /> */}
     </div>
   );

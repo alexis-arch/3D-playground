@@ -6,7 +6,7 @@ function generateShapes(){
     Zfont.init(Zdog);
 
     let illo = new Zdog.Illustration({
-        element: '.zdog-canvas-fish',
+        element: '.zdog-canvas-cat',
         dragRotate: true,
         // stop spinning when drag starts
         onDragStart: function() {
@@ -172,12 +172,12 @@ function generateShapes(){
     //     backface: '#C25',
     //   });
 
-      function animate() {
-        // illo.rotate.y += isSpinning ? -0.05 : 0;
-        illo.updateRenderGraph();
-        requestAnimationFrame( animate );
-      }
-      animate()
+    function animate() {
+      illo.rotate.y += isSpinning ? -0.05 : 0;
+      illo.updateRenderGraph();
+      requestAnimationFrame( animate );
+    }
+    animate();
 
     //   var font = new Zdog.Font({
     //     src: 'https://cdn.jsdelivr.net/gh/jaames/zfont/demo/fredokaone.ttf'
