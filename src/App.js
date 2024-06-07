@@ -4,6 +4,7 @@ import NewAnimation from './NewAnimation';
 import TextAnimation from './TextAnimation';
 import Mario from './Mario';
 import { Slides } from './Slides';
+import Cat from './Cat';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       {/* <Animation /> */}
       {/* <Mario />
       <NewAnimation /> */}
-      <Slides />
+      {/* <Slides /> */}
+      <Cat />
       {/* <TextAnimation /> */}
     </div>
   );
