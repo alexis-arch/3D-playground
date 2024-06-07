@@ -7,18 +7,31 @@ import { Slides } from './Slides';
 import Cat from './Cat';
 import Fish from './Fish';
 import Fork from './Fork';
+import Quizz from './Quizz';
+import Gym from './Gym';
 
 
 function App() {
   return (
     <div className="App">
-      <Fork />
-      <Fish />
+      <div className="container-3d">
+        <div className="card-3d"><Fork /></div>
+        <div className="card-3d"><Fish /></div>
+        <div className="card-3d"><Quizz /></div>
+      </div>
+      <div className="container-3d">
+        <div className="card-3d"><Cat /></div>
+        <div className="card-3d"><Gym /></div>
+
+      </div>
+      
+
+     
       {/* <Animation /> */}
        {/* <Mario /> */}
       {/* <NewAnimation /> */}
       {/* <Slides /> */}
-      <Cat />
+      
       {/* <TextAnimation /> */}
     </div>
   );

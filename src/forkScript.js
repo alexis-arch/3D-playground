@@ -16,8 +16,8 @@ function generateShapes(){
       let manche = new Zdog.Shape({
         addTo: illo,
         path: [
-          { y: -40 }, // start at 1st point
-          { y:  40 }, // line to 2nd point
+          { y: -40, x: -80 }, // start at 1st point
+          { y:  40, x:-80 }, // line to 2nd point
         ],
         stroke: 15,
         color: '#636',
@@ -26,7 +26,7 @@ function generateShapes(){
 
       let pointe = new Zdog.Shape({
         addTo: manche,
-        translate: { y: -45 },
+        translate: { y: -45, x:-80 },
         path: [
           { x: -15 }, // start at 1st point
           { x:  15 }, // line to 2nd point
@@ -82,14 +82,13 @@ function generateShapes(){
       let plate = new Zdog.Ellipse({
         addTo: illo,
         diameter: 80,
-        translate: {x:80},
         stroke: 20,
         color: '#C25',
       });
 
       let accent1 = new Zdog.Shape({
         addTo: illo,
-        translate: { y: -60, x: 60 },
+        translate: { y: -60, x: -20 },
         path: [
           { x: -15 }, // start at 1st point
           { x:  15, y: -10 }, // line to 2nd point
@@ -101,7 +100,7 @@ function generateShapes(){
 
       let accent2 = new Zdog.Shape({
         addTo: illo,
-        translate: { y: -70, x: 90 },
+        translate: { y: -70, x: 10 },
         path: [
           { x: -15 }, // start at 1st point
           { x:  15, y: 10 }, // line to 2nd point
@@ -113,10 +112,10 @@ function generateShapes(){
       let knifemanche = new Zdog.Shape({
         addTo: illo,
         path: [
-          { y: -50 }, // start at 1st point
+          { y: -40 }, // start at 1st point
           { y:  50 }, // line to 2nd point
         ],
-        translate: {x:160},
+        translate: {x:80},
         stroke: 15,
         color: '#636',
       });
